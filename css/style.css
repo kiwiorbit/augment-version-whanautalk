@@ -13,13 +13,13 @@
 
     --brandcolor: #32a6ff;
     --light:#ededed;
-    --dark:#262624;
+    --dark:#2b2b28;
     --white:#ffffff;
     --dark-box-shadow:#151515cc;
     --bluehover:#3d83ff;
     --bluelighthover:#57b0f4;
     --card-background:#29292c;
-    --redtext:#fd0808;
+    --redtext:#ff4c4c;
     --graytext:#ffffff78;
     --darkpurpleback:#120921;
     --lightpurple:#cbaaff;
@@ -722,7 +722,7 @@ aside {
 
 
 .sidebar a {
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 aside ul {
@@ -810,19 +810,12 @@ aside li a {
 /* ====== End of 1.2. hero section ====== */
 
 /* Statistics Section Styles */
-.statistics-section {
-    text-align: center;
-    padding: 80px 0;
-    background: var(--dark);
-    position: relative;
-    overflow: hidden;
-}
 
 
 
 .statistics-section h3 {
     font-size: 36px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     font-weight: 700;
     color: white;
     position: relative;
@@ -838,7 +831,7 @@ aside li a {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding-bottom: 60px;
     position: relative;
     z-index: 2;
 }
@@ -935,17 +928,6 @@ aside li a {
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* .statistic-number::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 2px;
-    background: var(--gradient-text);
-    transition: width 400ms ease;
-} */
 
 .statistic-card:hover .statistic-number {
     transform: scale(1.1);
@@ -1110,6 +1092,7 @@ aside li a {
     overflow: hidden;
     font-family: var(--primary-font);
     font-size: 16px;
+    cursor: pointer;
   }
 
   .article-card:before {
@@ -1478,7 +1461,7 @@ aside li a {
 }
 
 .containerTwo {
-    background-color: #1DA1F2;
+    background-color: #353738;
 }
 
 .containerThree {
@@ -1949,22 +1932,17 @@ aside li a {
 
 
 .collaboration-section {
-    background: var(--gradient2);
     color: white;
-    padding: 40px 20px;
-    margin-top: 90px;
+    padding: 80px 20px;
     display: flex;
+    flex-direction: column;
     transition: var(--transition);
     position: relative;
-}
-
-
-.collaboration-section:hover {
-    padding: 200px 0;
-    background:linear-gradient(300deg,#ffc4c4,#17798f, #192c5b, #3d2679, #541258 );
+    background:linear-gradient(60deg,#e9b9b9,#126578, #192c5b, #352169, #2b2b28,  #2b2b28, #2b2b28 );
     background-size: 180% 180%;
-    animation: gradient-animation 5s ease infinite;
+    animation: gradient-animation 15s ease infinite;
 }
+
 
 .collab-center {
     display: flex;
@@ -1990,7 +1968,7 @@ aside li a {
 
 .collaboration-contact {
     text-align: center;
-    padding: 2rem;
+    padding: 1.8rem;
     border-radius: 0.7rem;
     flex: 0.30;
     display: flex;
@@ -1999,17 +1977,18 @@ aside li a {
     justify-content: center;
     align-items: center;
     border: 1px solid white;
-    background: rgba(255, 255, 255, 0.055);
+    background:#2b2b28;
 }
 
 
 
 .collaboration-contact p {
     color: var(--light);
+    font-size: 14px;
 }
 
 .collaboration-contact a {
-    color: #52a9f1;
+    color:white ;
     text-decoration: none;
 }
 
@@ -2020,10 +1999,10 @@ aside li a {
 
 .collaboration-contact .btn-light {
     color: var(--dark);
+    background:#cbaaff;
 }
 
 .collaboration-contact .btn-light:hover {
-    color: var(--light);
     text-decoration: none;
 }
 
