@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whānau Talk</title>
+    <link rel="canonical" href="https://www.whanautalk.com/" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/easy.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -181,44 +182,58 @@
             </div>
         </section>
 
-        <section id="statisticsSection" class="statistics-section">
-            <div class="container" data-aos="fade-up">
-                <h3>Our <span class="gradient-text">Impact</span></h3>
-                <div class="statistics-container">
-                    <div class="statistic-card" data-aos="fade-up">
-                        <div class="statistic-icon">
-                            <i class="fas fa-eye"></i>
+        <div id="collaborationSection" class="collaboration-section">
+            <section id="statisticsSection" class="statistics-section">
+                <div class="container" data-aos="fade-up">
+                    <!-- <h3>Our <span class="gradient-text">Impact</span></h3> -->
+                    <div class="statistics-container">
+                        <div class="statistic-card" data-aos="fade-up">
+                            <div class="statistic-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="statistic-number" id="pageViewCount">0</div>
+                            <div class="statistic-label">Website Visitors</div>
                         </div>
-                        <div class="statistic-number" id="pageViewCount">0</div>
-                        <div class="statistic-label">Website Visitors</div>
-                    </div>
-
-                    <div class="statistic-card" data-aos="fade-up">
-                        <div class="statistic-icon">
-                            <i class="fas fa-paper-plane"></i>
+    
+                        <div class="statistic-card" data-aos="fade-up">
+                            <div class="statistic-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <div class="statistic-number" id="formSubmissionCount">0</div>
+                            <div class="statistic-label">Contact Form Submissions</div>
                         </div>
-                        <div class="statistic-number" id="formSubmissionCount">0</div>
-                        <div class="statistic-label">Contact Form Submissions</div>
-                    </div>
-
-                    <div class="statistic-card" data-aos="fade-up">
-                        <div class="statistic-icon">
-                            <i class="fas fa-users"></i>
+    
+                        <div class="statistic-card" data-aos="fade-up">
+                            <div class="statistic-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="statistic-number">42</div>
+                            <div class="statistic-label">Families Supported</div>
                         </div>
-                        <div class="statistic-number">42</div>
-                        <div class="statistic-label">Families Supported</div>
-                    </div>
-
-                    <div class="statistic-card" data-aos="fade-up">
-                        <div class="statistic-icon">
-                            <i class="fas fa-globe"></i>
+    
+                        <div class="statistic-card" data-aos="fade-up">
+                            <div class="statistic-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="statistic-number">8</div>
+                            <div class="statistic-label">Devices Delivered</div>
                         </div>
-                        <div class="statistic-number">8</div>
-                        <div class="statistic-label">Devices Delivered</div>
                     </div>
                 </div>
+            </section>
+            <div class="collab-center container gap-2">
+                <div class="collaboration-info" data-aos="fade-down">
+                    <h2>Help our team discover</h2>
+                    <h2><span class="gradient-text">Language Environment</span></h2>
+                    <h4>We are happy to partner with people all over the globe in our research. If you are interested in collaborating with us,</h4>
+                </div>
+                <div class="collaboration-contact" data-aos="fade-up">
+                    <a href="#contactForm" class="btn-light">Contact us</a>
+                    <p>or Email us @</p>
+                    <a href="mailto:support@whanautalk.com">support@whanautalk.com</a>
+                </div>
             </div>
-        </section>
+        </div>
 
         <section id="articles" class="article-section">
             <div class="container">
@@ -451,7 +466,7 @@
                                     <i class="fa-brands fa-facebook socialSvg"></i>
                                 </a>
                                 <a href="https://twitter.com/intent/tweet?url=https://kiwiorbit.github.io/fsptest6&text=Check%20this%20out!" class="socialContainer containerTwo" target="_blank">
-                                    <i class="fa-brands fa-twitter socialSvg"></i>
+                                    <i class="fa-brands fa-x-twitter socialSvg"></i>
                                 </a>
                                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://kiwiorbit.github.io/fsptest6/&title=Great%20Article&summary=This%20is%20a%20great%20article%20I%20found&source=YourWebsite" class="socialContainer containerThree" target="_blank">
                                     <i class="fa-brands fa-linkedin socialSvg"></i>
@@ -613,21 +628,7 @@
                     <hr>
                 </div>
             </div>
-            <div id="collaborationSection" class="collaboration-section">
-
-                <div class="collab-center container gap-2">
-                    <div class="collaboration-info" data-aos="fade-down">
-                        <h2>Help our team discover</h2>
-                        <h2><span class="gradient-text">Language Environment</span></h2>
-                        <h4>We are happy to partner with people all over the globe in our research. If you are interested in collaborating with us,</h4>
-                    </div>
-                    <div class="collaboration-contact" data-aos="fade-up">
-                        <a href="#contactForm" class="btn-light">Contact us</a>
-                        <p>or Email us @</p>
-                        <a href="mailto:support@whanautalk.com">support@whanautalk.com</a>
-                    </div>
-                </div>
-            </div>
+            
         </section>
                 <!-- ====== 1.4. logo-section section ====== -->
 
@@ -858,7 +859,7 @@
 
 
     <script src="./js/script.js"></script>
-    <script src="./js/statistics.js"></script>  
+    <script src="./js/statistics.js"></script>
 
 </body>
 
