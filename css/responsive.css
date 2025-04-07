@@ -227,9 +227,9 @@
         padding: 70px 0 0 0;
     }
 
-    .collaboration-section {
+    /* .collaboration-section {
         margin-top: 70px;
-    }
+    } */
 
     .faq {
         padding: 70px 0;
@@ -643,5 +643,10 @@
 
     .about p {
         text-align: start;
+    }
+
+    .statistic-card {
+        width: 400px;
+        height:200px;  
     }
 }
