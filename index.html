@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whānau Talk</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/easy.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="shortcut icon" href="./images/contrastlogo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./node_modules/lazyframe/dist/lazyframe.css" />
+
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Start site wrapper -->
+    <div class="wrapper">
+        <div class="header-index">
+            <!-- ====== 1.1. Header section ====== -->
+            <header>
+                <nav class="container navbar">
+                    <a class="navbar-logo" href="">
+                        <img class="logo" src="./images/contrastlogo.webp" alt="logo">
+                        <img class="logo-name" src="./images/whanautalk bw light.png" alt="logo name whānau talk">
+                    </a>
+                    <div class="container-nav flex">
+                        <!-- site logo -->
+                        <button class="navbar-toggler" onclick="toggleSidebar()" type="button">
+                            <span><i class="fa-solid fa-bars-staggered"></i></span>
+                        </button>
+                        <!-- menus -->
+                        <ul class="navbar-nav flex">
+                            <li><a class="nav-link" href="#articles">ARTICLES</a></li>
+                            <li><a class="nav-link" href="#teamSection">MEET OUR TEAM</a></li>
+                            <li><a class="nav-link" href="#contactForm">CONTACT US</a></li>
+                            <li class="dropdown" id="navbarScrollingDropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                                    SPEECH SCIENCE
+                                </a><i class="fa-solid fa-chevron-down"></i>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#fspSection">Family Support Program</a></li>
+                                    <li><a class="dropdown-item" href="#lenaSection">What is Lena?</a></li>
+                                    <li><a class="dropdown-item" href="#collaborationSection">Collaboration</a></li>
+                                    <li><a class="dropdown-item" href="#participateSection">Participation</a></li>
+                                    <li><a class="dropdown-item" href="#researchProject">About</a></li>
+                                    <li><a class="dropdown-item" href="#faqSection">FAQ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Sidebar -->
+                <aside id="mySidepanel" class="sidepanel">
+                    <div class="sidebar flex">
+                        <a href=""><img src="./images/ear logo ori white.webp" alt="logo"></a>
+                        <!-- Removed the close button -->
+                    </div>
+                    <div>
+                        <!-- side menus -->
+                        <ul>
+                            <li><a class="nav-link side" href="#fspSection">Family Support Program</a></li>
+                            <li><a class="nav-link side" href="#collaborationSection">Collaboration</a></li>
+                            <li><a class="nav-link side" href="#teamSection">Meet our team</a></li>
+                            <li><a class="nav-link side" href="#participateSection">Participation</a></li>
+                            <li><a class="nav-link side" href="#lenaSection">What is Lena?</a></li>
+                            <li><a class="nav-link side" href="#articles">Publications</a></li>
+                            <li><a class="nav-link side" href="#contactForm">Contact us</a></li>
+                            <li><a class="nav-link side" href="#faqSection">FAQ</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </header>
+            <!-- ====== End of 1.1. Header section ====== -->
+            <!-- ====== 1.2. hero section ====== -->
+            <section id="home" class="hero">
+                <div class="container">
+                    <div>
+                        <div class="center-data">
+                            <div id="gooey"></div>
+                            <h1><span class="gradient-text-2">Conversations</span> that Inspire</h1>
+                            <div class="tagline">
+                                <h2>Empowering Kiwi families with children with hearing difference with the necessary tools and resources in their journey</h2>
+                                <div class="center-btn flex">
+                                    <a  href="#articles" class="hero-button" >
+                                        <div class="svg-wrapper-1">
+                                            <div class="svg-wrapper"><i class="fa-solid fa-book-open"></i>
+                                        </div>
+                                        </div>
+                                        <span>See Research</span>
+                                    </a>
+
+                                    <a href="#fspSection" class="btn-secondary">What is FSP ?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- ====== End of 1.2. hero section ====== -->
+        </div>
+
+        <!-- ========== Research Section Begins =========== -->
+
+        <section id="researchProject" class="research dark">
+            <div class="container">
+                <div class="uline researchsvg" data-aos="zoom-in" data-aos-offset="100"></div>
+                <div class="flex-wrap exp-center" data-aos="fade-up">
+                    <div>
+                        <h2>Why are <span class="gradient-text">interactions</span> at home the best?</h2>
+                        <p class="mt-1">In the familial environment, where parents hold valuable insights into their child's needs, the primary focus remains steadfastly on nurturing their well-being and development. Emphasizing the creation of a calm and supportive atmosphere, disruptions are minimized to enhance learning opportunities. This is particularly crucial during the first 1,000 days of life, a key learning window where every experience profoundly shapes a child's future path.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="flex flex-sb aim">
+                    <div class="w-50 p-relative flex flex-center" data-aos="zoom-in">
+                        <div class="research_mask">
+                            <figure><img src="./images/aim.webp" alt="img"></figure>
+                        </div>
+
+                    </div>
+                    <div class="research-left flex flex-col gap-2 mt-1">
+                        <div class="flex gap-1 research-question" data-aos="fade-up">
+                            <h2>This study will address following research questions.</h2>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex flex-center">
+                                <h3>Q1</h3>
+                            </div>
+                            <div>
+                                <!-- <h4>Focus is on the child</h4> -->
+                                <p>Does FSP increase AWC, CTC, and optimal interaction styles compared to baseline cross-behavior assessments?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="flex flex-center">
+                                <h3>Q2</h3>
+                            </div>
+                            <div>
+                                <p>How increased open-ended questions support a child’s oral language skills?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="flex flex-center">
+                                <h3>Q3</h3>
+                            </div>
+                            <div>
+                                <p>How increased expansion support a child’s oral language skills?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="flex flex-center">
+                                <h3>Q4</h3>
+                            </div>
+                            <div>
+                                <p>How increased recast support a child’s oral language skills?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-30 flex flex-end article-box">
+                            <a href="#lenaSection" class="btn-light" >What is Lena?
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="statisticsSection" class="statistics-section">
+            <div class="container" data-aos="fade-up">
+                <h3>Our <span class="gradient-text">Impact</span></h3>
+                <div class="statistics-container">
+                    <div class="statistic-card" data-aos="fade-up">
+                        <div class="statistic-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="statistic-number" id="pageViewCount">0</div>
+                        <div class="statistic-label">Website Visitors</div>
+                    </div>
+
+                    <div class="statistic-card" data-aos="fade-up">
+                        <div class="statistic-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <div class="statistic-number" id="formSubmissionCount">0</div>
+                        <div class="statistic-label">Contact Form Submissions</div>
+                    </div>
+
+                    <div class="statistic-card" data-aos="fade-up">
+                        <div class="statistic-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="statistic-number">42</div>
+                        <div class="statistic-label">Families Supported</div>
+                    </div>
+
+                    <div class="statistic-card" data-aos="fade-up">
+                        <div class="statistic-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="statistic-number">8</div>
+                        <div class="statistic-label">Countries Reached</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="articles" class="article-section">
+            <div class="container">
+                <div class="article-section-heading" data-aos="zoom-in">
+                    <div class="uline publications"></div>
+                    <p>Click to view some of our latest articles explaining what we have been up to and giving you insights into our Speech Science Dept.</p>
+                </div>
+                <div class="grid">
+
+                    <div class="article-card" data-aos="fade-up">
+                        <div class="backglow"></div>
+                        <div class="backborderglow"></div>
+                        <div class="card-title">Jun 2024<span class="article-new">Most Recent!</span></div>
+                        <div class="card-text"><a>Sultana, N., Brock, A. S., & Purdy, S. C. (2024). Caregiver response types and children language outcomes in preschoolers with and without hearing loss in Aotearoa New Zealand. Journal of the Royal Society of New Zealand, 1–22.
+                        <a href="https://doi.org/10.1080/03036758.2024.2356183" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="article-card" data-aos="fade-up">
+                        <div class="backglow"></div>
+                        <div class="backborderglow"></div>
+                        <div class="card-title">Apr 2024</div>
+                        <div class="card-text"><a>Sultana, N., Wong, L. L., & Purdy, S. C. (2024). Analysis of natural language input in preschool children with and without hearing loss: quantity, caregiver response types, and influence of demographic factors.
+                        <a href="https://www.tandfonline.com/doi/full/10.1080/2050571X.2024.2340274" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="article-card" data-aos="fade-up" >
+                        <div class="backglow"></div>
+                        <div class="backborderglow"></div>
+                        <div class="card-title">Aug 2020</div>
+                        <div class="card-text"><a>Sultana, N., Wong, L. L., &amp; Purdy, S. C. (2020). Natural language input: Maternal education, socioeconomic deprivation, and language outcomes in typically developing children. <em>Language, Speech, and Hearing Services in Schools</em>, <em>51</em>(4), 1049-1070.</a>
+                        <a href="https://pubs.asha.org/doi/abs/10.1044/2020_LSHSS-19-00095" target="_blank""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="article-card" data-aos="fade-up"  >
+                        <div class="backglow"></div>
+                        <div class="backborderglow"></div>
+                        <div class="card-title">Jun 2020</div>
+                        <div class="card-text"><a>Sultana, N., Wong, L. L., &amp; Purdy, S. C. (2020). Dataset on the calculations of daily adult word and conversational turn counts, and use of styles of oral interaction in 2–5-year olds with hearing loss in New Zealand. <em>Data in Brief</em>, <em>30</em>, 105372</em>, <em>51</em>(4), 1049-1070.</a>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S2352340920302663" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="article-card" data-aos="fade-up"  >
+                        <div class="backglow"></div>
+                        <div class="backborderglow"></div>
+                        <div class="card-title">Sep 2019</div>
+                        <div class="card-text"><a>Sultana, N., Wong, L. L., &amp; Purdy, S. C. (2019). Analysis of amount and style of oral interaction related to language outcomes in children with hearing loss: A systematic review (2006–2016). <em>Journal of Speech, Language, and Hearing Research</em>, <em>62</em>(9), 3470-3492.</a>
+                        <a href="https://pubs.asha.org/doi/abs/10.1044/2019_JSLHR-L-19-0076" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="article-card" data-aos="fade-up"  >
+                        <div class="backglow"></div>
+                        <div class="backborderglow"></div>
+                        <div class="card-title">Aug 2017</div>
+                        <div class="card-text"><a>Wong, L. L., Sultana, N., &amp; Chen, Y. (2017). Language Matters: Considerations in Measuring Speech Intelligibility. <em>The Hearing Journal</em>, <em>70</em>(8), 8-9.</a>
+                        <a href="https://journals.lww.com/thehearingjournal/FullText/2017/08000/Language_Matters__Considerations_in_Measuring.3.aspx" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="article-card" data-aos="fade-up"  >
+                        <div class="backglow"></div>
+                        <div class="backborderglow"></div>
+                        <div class="card-title">Nov 2014</div>
+                        <div class="card-text"><a>Sultana N, Butt A kamal,  &amp; Khan MSG. Speech Intelligibility in Hearing Aid users with and without Auditory Training: <em>JRCRS.</em> 2014; 2(2): 26-32</a>
+                        <a href="https://journals.riphah.edu.pk/index.php/jrcrs/article/view/436" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+
+            </div>
+        </section>
+
+        <section id="lenaSection" class="lena-section">
+            <div class="container">
+                <div class="uline what-is-lena" data-aos="zoom-in" ></div>
+                <div class="lena-1">
+                    <div class="lena-center" data-aos="fade-up">
+                            <div>
+                                <h2>✨Building brain through <span class="gradient-text">Conversations,</span></h2>
+                                <p>Did you know that a playful exchange of words could build brains? With LENA technology, we measure these precious "conversational turns," counting each time an adult speaks and a child chimes in (or vice versa) within five seconds. From a baby's giggle to a toddler's pretend words, every sound matters. These turns are LENA’s way of capturing the vital "serve and return" interactions that spark brain development!</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="lena-tech">
+                    <div class="lena-device" data-aos="zoom-in">
+                        <img loading="lazy" class="lena-image" decoding="async" src="./images/child-pedometer.webp">
+                        <h2 class="image-title">
+                            <span>LENA Device</span>
+                        </h2>
+                        <div class="image-detail">
+                            <p>The LENA device, a compact and child-friendly recorder, is designed for children to wear for a day. It adheres to both U.S. and international safety regulations for electronics and toys. Unlike a cellphone, it doesn't transmit data and employs low-power processors similar to those found in hearing aids.</p>
+                        </div>
+                    </div>
+
+                    <div class="lena-software" data-aos="zoom-in" >
+                        <img class="lena-image"  decoding="async" src="./images/software.webp">
+                        <h2 class="image-title">
+                            <span>LENA Software</span>
+                        </h2>
+                        <div class="image-detail">
+                            <p>The LENA software analyzes the audio recorded by the device, converting it into valuable information about speech. This data is then presented in easily understandable reports that can be shared with caregivers. Through secure online tools, program management becomes efficient, with real-time assessments of fidelity and effectiveness built-in.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lena-video">
+                    <h3>Watch How it <span class="gradient-text">Works,</span></h3>
+
+                    <iframe data-aos="fade-up" width="757" height="450" src="https://www.youtube.com/embed/8DAW9g-NoLA?si=GWJXaMzBvZKYkD2j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <iframe data-aos="fade-up" width="757" height="450" src="https://www.youtube.com/embed/XJMzuaR1QDI?si=tAvRKlNLpTd8FXkd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    <a href="https://www.lena.org/" target="_blank">Click here to learn more: https://www.lena.org/</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== 1.5. About us section ====== -->
+        <section id="fspSection" class="about">
+            <div class="container">
+                <div class="uline fsp" data-aos="zoom-in"></div>
+                <p>The purpose of the programme is to facilitate the development of language learning skills in children with hearing differences by engaging with the families and whānau of children with hearing differences.
+                </p>
+                <div class="about-data flex-sb">
+                    <div data-aos="fade-up">
+
+                        <h2><span class="gradient-text">'Family Support Programme'</span>  is developed by a multidisciplinary team of proffesionals including...
+                        </h2>
+                        <div class="flex gap-1 mt-15 profession">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <h5>Scientists</h5>
+                            <i class="fa-solid fa-chevron-left"></i>
+
+                        </div>
+                        <div class="flex gap-1 mt-15 profession">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <h5>Audiologists</h5>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="flex gap-1 mt-15 profession">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <h5>Auditory-verbal therapists</h5>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="flex gap-1 mt-15 profession">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <h5>Speech-language therapists</h5>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="flex gap-2 mt-30 center-btn">
+                            <a href="#faqSection" class="btn-light">Learn More</a>
+                            <a href="#collaborationSection" class="btn-dark">Collaboration</a>
+                        </div>
+                    </div>
+                    <div class="about-imgs flex flex-center w-50" data-aos="fade-down">
+                        <div>
+                            <figure>
+                                <img src="./images/staff.webp" alt="a group of staff memmber">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="participateSection" class="participate-section">
+            <div class="container">
+                <div class="uline participate-heading" data-aos="zoom-in"></div>
+                <div class="top-container participate-center">
+                    <div class="heading" data-aos="fade-up">
+                        <h2>✨Call for <span class="gradient-text">Participation</span> in Parent/Caregiver Coaching Study</h2>
+                        <p class="publish-date">Published on March 8, 2024</p>
+                        <div class="introduction">
+                            <p>We invite families of children with hearing loss to take part in the study. Caregivers and their children with hearing loss will participate in pre-post assessments and 3 training sessions either in person or via video link. We will <span style="font-weight: bold;">support parents</span> on how to interact and engage their children with hearing loss in different natural play-based learning activities. We will use full-day LENA recordings to collect data. Data is automatically deleted after the communication measures are analysed to see your child’s progess.</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card" data-aos="fade-left">
+                            <div class="card-image">
+                                <img src="./images/checklist.webp" alt="checklist">
+                            </div>
+                            <div class="card-content checklist">
+                                <h2>Who can participate?</h2>
+                                <p>The research study is open to children with hearing loss and their parents or caregivers. Caregivers can include parents or any other adults responsible for the child's care. Families are eligible to participate if they have a child with hearing loss who meets the following criteria:</p>
+                                <ul>
+                                    <li>✔️ Age: Between 1 to 5 years old.</li>
+                                    <li>✔️ Did not pass Newborn Hearing Screening.</li>
+                                    <li>✔️ Diagnosed with hearing loss between 3-6 months of age.</li>
+                                    <li>✔️ Regularly uses hearing devices such as cochlear implants or hearing aids.</li>
+                                    <li>✔️ Resides in a home where one or more languages are spoken.</li>
+                                    <li>✔️ Primarily speaks English, particularly within the household.</li>
+                                    <li>✔️ Can copy some spoken words.</li>
+                                    <li>✔️ Does not have any other disabilities aside from hearing loss.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card gift-card" data-aos="fade-right">
+                            <div class="card-content">
+                                <h2>Compensation/Gift</h2>
+                                <p>Participants will receive a $25 E-voucher for each training session attended, as recognition of their time and the associated costs of participating in the research. Additionally, families will be provided with a $10 voucher for mobile phone data top-ups to facilitate their participation in phone call follow-ups. Interested families are encouraged to contact the research team for more information on participation.</p>
+                            </div>
+                            <div class="card-image">
+                                <img src="./images/gift.webp" alt="gift boxes">
+                            </div>
+                        </div>
+
+                        <div class="card" data-aos="fade-left">
+                            <div class="card-image">
+                                <img src="./images/uni of auckland.webp" alt="university logo">
+                            </div>
+                            <div class="card-content">
+                                <h2><span class="gradient-text">Participate</span> in our research</h2>
+                                <p>Become a part of a community dedicated to enhancing the learning experience for children with hearing differences and evolve with us as we embark on our groundbreaking research program. Together, let's make a difference in the lives of our children. Connect, share, and grow with us.</p>
+                                <a href="#contactForm" class="cta-button">Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="share" data-aos="fade-up">
+                            <p>Like what you read? Share this online!</p>
+                            <div class="share-card">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://kiwiorbit.github.io/fsptest6" class="socialContainer containerOne" target="_blank">
+                                    <i class="fa-brands fa-facebook socialSvg"></i>
+                                </a>
+                                <a href="https://twitter.com/intent/tweet?url=https://kiwiorbit.github.io/fsptest6&text=Check%20this%20out!" class="socialContainer containerTwo" target="_blank">
+                                    <i class="fa-brands fa-twitter socialSvg"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://kiwiorbit.github.io/fsptest6/&title=Great%20Article&summary=This%20is%20a%20great%20article%20I%20found&source=YourWebsite" class="socialContainer containerThree" target="_blank">
+                                    <i class="fa-brands fa-linkedin socialSvg"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <video data-aos="fade-up" muted autoplay loop class="background-video">
+                <source src="./images/earlytalk2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="container position-relative">
+                <div class="fact-center">
+                    <div>
+                        <h2>✨For a <span class="gradient-text-2">Child,</span> responsive relationships are the foundation...</h2>
+                        <h4>and it all starts with conversations</h4>
+                    </div>
+                </div>
+                <div class="work-para text-center" data-aos="fade-up">
+                    <p>Simply follow the steps</p>
+                </div>
+                <div class="work-line flex flex-center gap-1 flex-wrap p-relative">
+                    <div data-aos="zoom-in" data-aos-delay="200">
+                        <h2>01.</h2>
+                        <h4>Fill Contact form</h4>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="400">
+                        <h2>02.</h2>
+                        <h4>Meet Our Team</h4>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="600">
+                        <h2>03.</h4>
+                        <h4>Get Free Training</h4>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="800">
+                        <h2>04.</h2>
+                        <h4>Apply new learning with your child</h4>
+                    </div>
+                </div>
+                <div class="flex flex-center" data-aos="zoom-in">
+                    <a href="#contactForm" class="btn-light">Have a question?</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- team section begins -->
+
+        <section id="teamSection" class="team">
+            <div class="container">
+                <div class="team-heading" data-aos="fade-up">
+                    <div class="uline meet-our-team-svg" data-aos="zoom-in"></div>
+                        <p class="mt-1 description">We are coaching parents/caregivers to expose optimal quantity and quality of interaction with their children with hearing differences.
+                        </p>
+                </div>
+
+                <div class="team-slider flex mt-15 team-grid" data-aos="zoom-in">
+                    <div class="team-member">
+                        <div class="team-img"><img src="./images/nuzhat.webp" alt="Avatar"></div>
+                        <div class="team-info">
+                            <h3>Nuzhat Sultana</h3>
+                            <h4 class="title">Lecturer/SLT</h4>
+                            <p>Dr. Nuzhat Sultana completed her Ph.D from The University of Hongkong, She is a Lecturer of Speech Science in the School of Psychology at The University of Auckland, Currently her research is focused on language development in young children, focusing on those with and without hearing loss. Her work includes early intervention and speech-language therapy to support caregiver-child interactions. She is developing a programme to help parents optimize verbal interactions using LENA technology. This research benefits children with hearing loss and other SLC challenges. Dr. Sultana also supervises research and provides professionals guidance for speech-language therapists and students.</p>
+                        </div>
+
+                        <div class="social-card2">
+                            <a href="mailto:nuzhat.sultana@auckland.ac.nz" class="social-link1">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nuzhatsultana" target="_blank" class="social-link2">
+                                <i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://scholar.google.com/citations?hl=en&user=OJdpiCAAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" class="social-link3">
+                                <svg role="img" viewBox="0 0 28 28" aria-hidden="true"><g transform="translate(-28 -254)"><path class="svgs__sidebarIconForegroundColour___xwJMh" fill="currentColor" stroke="none" d="M798.628,433.825l-7.4,4.628h5.083c-.019.07-.049.133-.065.206a3.939,3.939,0,0,0-.076.726c0,3.306,3.379,2.933,3.379,2.933v.842c0,.341.448.223.5.916-.224,0-4.68-.128-4.68,2.878s3.933,2.869,3.933,2.869,4.543.2,4.543-3.529c0-2.229-2.6-2.955-2.6-3.85s1.961-1.172,1.961-3.294a2.975,2.975,0,0,0-.479-2.057.638.638,0,0,0-.085-.076c-.007-.006-.016-.011-.023-.018h.113l1.917-1.437v1.965a.48.48,0,0,0,.01.107.925.925,0,0,0-.473.819v.925a.926.926,0,1,0,1.851.026v-.951a.926.926,0,0,0-.474-.819.426.426,0,0,0,.011-.107v-2.661l1.388-1.041Zm.639,2.825a1.461,1.461,0,0,1,.79.2,1.917,1.917,0,0,1,.532.405,3.071,3.071,0,0,1,.757,1.376c.352,1.343-.1,2.634-1.054,2.88-.938.265-1.984-.611-2.346-1.944a3.115,3.115,0,0,1,.043-1.778l.008-.018.011-.008a1.638,1.638,0,0,1,.24-.522,1.31,1.31,0,0,1,.754-.55A1.423,1.423,0,0,1,799.267,436.65Zm.362,7.99c1.567-.117,2.9.746,3,1.918.065,1.163-1.141,2.2-2.719,2.3s-2.92-.744-2.995-1.907S798.051,444.758,799.629,444.64Z" transform="translate(-757.223 -173.825)"></path></g></svg>
+                            </a>
+                            <a href="https://profiles.auckland.ac.nz/nuzhat-sultana" target="_blank" class="social-link4">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                            <a href="https://orcid.org/0000-0001-6196-3976" target="_blank" class="social-link5">
+                                <img src="./images/orcid.svg" alt="">
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="team-member">
+                        <div class="team-img"><img src="./images/Suzanne.webp" alt="Avatar"></div>
+                        <div class="team-info">
+                            <h3>Suzanne Purdy</h3>
+                            <h4 class="title">Professor</h4>
+                            <p>Suzanne (Te Rarawa, Ngāi Takoto) completed her MSc at University of Auckland, then trained as a clinical audiologist at the University of Melbourne in 1981. She worked as a clinical audiologist for six years but was lured back into hearing-related research. She then completed a PhD at the University of Iowa before starting her academic career in 1990. There are close links between hearing and language, hence she is very excited to be part of this research with families to support their critical role in their children’s speech, language and communication development.</p>
+                        </div>
+                        <div class="social-card2">
+                            <a href="mailto:sc.purdy@auckland.ac.nz" class="social-link1">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/suzanne-c-purdy-8382b31b/" target="_blank" class="social-link2">
+                                <i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://scholar.google.co.nz/citations?user=dQoNgkAAAAAJ&hl=en" target="_blank" class="social-link3">
+                                <svg role="img" viewBox="0 0 28 28" aria-hidden="true"><g transform="translate(-28 -254)"><path class="svgs__sidebarIconForegroundColour___xwJMh" fill="currentColor" stroke="none" d="M798.628,433.825l-7.4,4.628h5.083c-.019.07-.049.133-.065.206a3.939,3.939,0,0,0-.076.726c0,3.306,3.379,2.933,3.379,2.933v.842c0,.341.448.223.5.916-.224,0-4.68-.128-4.68,2.878s3.933,2.869,3.933,2.869,4.543.2,4.543-3.529c0-2.229-2.6-2.955-2.6-3.85s1.961-1.172,1.961-3.294a2.975,2.975,0,0,0-.479-2.057.638.638,0,0,0-.085-.076c-.007-.006-.016-.011-.023-.018h.113l1.917-1.437v1.965a.48.48,0,0,0,.01.107.925.925,0,0,0-.473.819v.925a.926.926,0,1,0,1.851.026v-.951a.926.926,0,0,0-.474-.819.426.426,0,0,0,.011-.107v-2.661l1.388-1.041Zm.639,2.825a1.461,1.461,0,0,1,.79.2,1.917,1.917,0,0,1,.532.405,3.071,3.071,0,0,1,.757,1.376c.352,1.343-.1,2.634-1.054,2.88-.938.265-1.984-.611-2.346-1.944a3.115,3.115,0,0,1,.043-1.778l.008-.018.011-.008a1.638,1.638,0,0,1,.24-.522,1.31,1.31,0,0,1,.754-.55A1.423,1.423,0,0,1,799.267,436.65Zm.362,7.99c1.567-.117,2.9.746,3,1.918.065,1.163-1.141,2.2-2.719,2.3s-2.92-.744-2.995-1.907S798.051,444.758,799.629,444.64Z" transform="translate(-757.223 -173.825)"></path></g></svg>
+                            </a>
+                            <a href="https://profiles.auckland.ac.nz/sc-purdy" target="_blank" class="social-link4">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                            <a href="https://orcid.org/0000-0001-9978-8173" target="_blank" class="social-link5">
+                                <img src="./images/orcid.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-img"><img src="./images/aleah.webp" alt="Avatar"></div>
+                        <div class="team-info">
+                            <h3>Aleah Brock</h3>
+                            <h4 class="title">Assistant Professor</h4>
+                            <p>Aleah is an assistant professor at the University of West Georgia, USA. She completed her PhD at the University of Georgia with research focused on coaching caregivers to use facilitative language techniques with their children who are deaf or hard of hearing (DHH). Prior to obtaining her PhD, Aleah worked as a speech-language pathologist at the Georgia School for the Deaf and continues to provide early intervention services to families of children who are DHH. Her current research interests investigate the impact of family-centered early intervention on language outcomes for children who are DHH, with a particular focus on optimizing caregivers' linguistic input to their children. </p>
+                        </div>
+                        <div class="social-card2">
+                            <a href="mailto:abrock@westga.edu" class="social-link1">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/aleah-s-brock-ph-d-ccc-slp-a881b521/" target="_blank" class="social-link2">
+                                <i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.researchgate.net/profile/Aleah-Brock" target="_blank" class="social-link3">
+                                <svg role="img" viewBox="0 0 28 28" aria-hidden="true"><g transform="translate(-28 -254)"><path class="svgs__sidebarIconForegroundColour___xwJMh" fill="currentColor" stroke="none" d="M798.628,433.825l-7.4,4.628h5.083c-.019.07-.049.133-.065.206a3.939,3.939,0,0,0-.076.726c0,3.306,3.379,2.933,3.379,2.933v.842c0,.341.448.223.5.916-.224,0-4.68-.128-4.68,2.878s3.933,2.869,3.933,2.869,4.543.2,4.543-3.529c0-2.229-2.6-2.955-2.6-3.85s1.961-1.172,1.961-3.294a2.975,2.975,0,0,0-.479-2.057.638.638,0,0,0-.085-.076c-.007-.006-.016-.011-.023-.018h.113l1.917-1.437v1.965a.48.48,0,0,0,.01.107.925.925,0,0,0-.473.819v.925a.926.926,0,1,0,1.851.026v-.951a.926.926,0,0,0-.474-.819.426.426,0,0,0,.011-.107v-2.661l1.388-1.041Zm.639,2.825a1.461,1.461,0,0,1,.79.2,1.917,1.917,0,0,1,.532.405,3.071,3.071,0,0,1,.757,1.376c.352,1.343-.1,2.634-1.054,2.88-.938.265-1.984-.611-2.346-1.944a3.115,3.115,0,0,1,.043-1.778l.008-.018.011-.008a1.638,1.638,0,0,1,.24-.522,1.31,1.31,0,0,1,.754-.55A1.423,1.423,0,0,1,799.267,436.65Zm.362,7.99c1.567-.117,2.9.746,3,1.918.065,1.163-1.141,2.2-2.719,2.3s-2.92-.744-2.995-1.907S798.051,444.758,799.629,444.64Z" transform="translate(-757.223 -173.825)"></path></g></svg>
+                            </a>
+                            <a href="https://www.westga.edu/profile.php?emp_id=91064" target="_blank" class="social-link4">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                            <a href="https://orcid.org/0000-0001-9744-7324" target="_blank" class="social-link5">
+                                <img src="./images/orcid.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-img"><img src="./images/liz.webp" alt="Avatar"></div>
+                        <div class="team-info">
+                            <h3>Liz Fairgray</h3>
+                            <h4 class="title">Clinical Educator</h4>
+                            <p>Liz Fairgray is a Speech-Language Therapist and Auditory Verbal Therapist with 30 years of expertise in helping children with communication difficulties, particularly those with hearing loss. She received her postgraduate degree in Speech Pathology & Audiology in California and was the first New Zealander to become a Certified Auditory Verbal Therapist. Liz played a crucial role as the founding therapist at The Hearing House, emphasizing parent support as a cornerstone of her approach. She continues to advance her field through research, teaching, and serving as the NZSTA Expert Advisor for Child Hearing Loss. Currently, Liz is focused on supporting parents of children with hearing loss, building on her lifelong commitment to this area.</p>
+                        </div>
+                        <div class="social-card2">
+                            <a href="mailto:l.fairgray@auckland.ac.nz" class="social-link1">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/elizabeth-fairgray-15944243" target="_blank" class="social-link2">
+                                <i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.researchgate.net/profile/Liz-Fairgray" target="_blank" class="social-link3">
+                                <svg role="img" viewBox="0 0 28 28" aria-hidden="true"><g transform="translate(-28 -254)"><path class="svgs__sidebarIconForegroundColour___xwJMh" fill="currentColor" stroke="none" d="M798.628,433.825l-7.4,4.628h5.083c-.019.07-.049.133-.065.206a3.939,3.939,0,0,0-.076.726c0,3.306,3.379,2.933,3.379,2.933v.842c0,.341.448.223.5.916-.224,0-4.68-.128-4.68,2.878s3.933,2.869,3.933,2.869,4.543.2,4.543-3.529c0-2.229-2.6-2.955-2.6-3.85s1.961-1.172,1.961-3.294a2.975,2.975,0,0,0-.479-2.057.638.638,0,0,0-.085-.076c-.007-.006-.016-.011-.023-.018h.113l1.917-1.437v1.965a.48.48,0,0,0,.01.107.925.925,0,0,0-.473.819v.925a.926.926,0,1,0,1.851.026v-.951a.926.926,0,0,0-.474-.819.426.426,0,0,0,.011-.107v-2.661l1.388-1.041Zm.639,2.825a1.461,1.461,0,0,1,.79.2,1.917,1.917,0,0,1,.532.405,3.071,3.071,0,0,1,.757,1.376c.352,1.343-.1,2.634-1.054,2.88-.938.265-1.984-.611-2.346-1.944a3.115,3.115,0,0,1,.043-1.778l.008-.018.011-.008a1.638,1.638,0,0,1,.24-.522,1.31,1.31,0,0,1,.754-.55A1.423,1.423,0,0,1,799.267,436.65Zm.362,7.99c1.567-.117,2.9.746,3,1.918.065,1.163-1.141,2.2-2.719,2.3s-2.92-.744-2.995-1.907S798.051,444.758,799.629,444.64Z" transform="translate(-757.223 -173.825)"></path></g></svg>
+                            </a>
+                            <a href="https://profiles.auckland.ac.nz/l-fairgray" target="_blank" class="social-link4">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div id="collaborationSection" class="collaboration-section">
+
+                <div class="collab-center container gap-2">
+                    <div class="collaboration-info" data-aos="fade-down">
+                        <h2>Help our team discover</h2>
+                        <h2><span class="gradient-text">Language Environment</span></h2>
+                        <h4>We are happy to partner with people all over the globe in our research. If you are interested in collaborating with us,</h4>
+                    </div>
+                    <div class="collaboration-contact" data-aos="fade-up">
+                        <a href="#contactForm" class="btn-light">Contact us</a>
+                        <p>or Email us @</p>
+                        <a href="mailto:support@whanautalk.com">support@whanautalk.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- ====== 1.4. logo-section section ====== -->
+
+        <section class="logos-title-large">
+            <div class="container-5">
+                <div class="uline our-network" data-aos="zoom-in"></div>
+                <div class="logo-wrapper">
+                    <img data-aos="zoom-out" data-aos-delay="100" src="./images/logo-section/asha.png" loading="lazy" alt="Asha logo" class="logo-image">
+
+                    <img data-aos="zoom-out" data-aos-delay="200"src="./images/logo-section/lena.png" loading="lazy" alt="lena logo" class="logo-image">
+
+                    <img data-aos="zoom-out" data-aos-delay="300" src="./images/logo-section/thh.png" loading="lazy" alt="the hearing house logo" class="logo-image">
+
+                    <img data-aos="zoom-out" data-aos-delay="400" src="./images/logo-section/uoa.webp" loading="lazy" alt="university of auckland logo" class="logo-image">
+
+                    <img data-aos="zoom-out" data-aos-delay="500" src="./images/logo-section/nzsta.png" loading="lazy" alt="nzsta logo" class="clients-image">
+                </div>
+            </div>
+        </section>
+        <!-- ====== End of 1.4. logo-section section ====== -->
+        <section id="faqSection" class="faq p-relative">
+            <span> </span>
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-50 text-center" data-aos="fade-up">
+                        <div class="flex gap-2 ">
+                            <hr class="faq-hr1">
+                            <h5>FAQ</h5>
+                        </div>
+                        <h2 class="mt-1">Frequently Asked Questions</h2>
+                        <p class="mt-1">We want to make your learning journey as smooth and enjoyable as possible, so you can concentrate on what truly matters. That's why we're excited to share a list of FAQs designed to help you navigate our family support program effortlessly.We're here to support you every step of the way, ensuring you and your child can thrive together!
+                        </p>
+                    </div>
+                    <div class="w-50 mt-15">
+                        <div class="accordion flex flex-col gap-1" id="accordionExample" data-aos="fade-down">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        How do we know if our child is eligible for the program?
+                                        <img src="./images/chevron-down-solid.svg" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Children are eligible if they are between 1 to 5 years old, passed newborn hearing screening, diagnosed with hearing loss between 3-6 months of age, regularly use hearing devices, and can copy some spoken words.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        What if my child has additional disabilities?
+                                        <img src="./images/chevron-down-solid.svg" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>The program is specifically designed for children whose only disability is hearing loss. If your child has additional disabilities, other programs may be more suitable.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        Why include families with children aged 1-5? in this program?
+                                        <img src="./images/chevron-down-solid.svg" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>According to research, the first few years are crucial for a child's development. Early intervention during this period can have significant positive impacts on language acquisition and cognitive development.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        What kind of training will we receive in this program?
+                                        <img src="./images/chevron-down-solid.svg" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Caregivers will receive training through three sessions focused on engaging and interacting with their children using play-based learning activities. Training sessions can be conducted in person or via video link, making it convenient for families to participate from their home environment.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        What is the role of LENA technology in this program?
+                                        <img src="./images/chevron-down-solid.svg" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>LENA technology involves using specialized audio recording devices to capture and analyze verbal interactions around the child, providing insights into their language exposure and helping to enhance language development.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        Can grandparents or other caregivers participate in the training?
+                                        <img src="./images/chevron-down-solid.svg" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Yes, any adult responsible for the child's care, including grandparents and other caregivers, can participate in the training sessions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        What kind of Follow-up support is provided?
+                                        <img src="./images/chevron-down-solid.svg" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Follow-up support includes phone call check-ins and additional resources to help families continue implementing the strategies learned during training.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        How does the program address the needs of bilingual families?
+                                        <img src="./images/chevron-down-solid.svg" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>The program is designed for families where one or more languages are spoken, with a focus on enhancing language interactions in the primary language spoken at home, particularly English.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb" type="button">
+                                        What kind of data is collected during the study?
+                                        <img src="./images/chevron-down-solid.svg" alt="img">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Data is collected through pre-post assessments and full-day LENA recordings, which capture the quantity and quality of verbal interactions in the child's environment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ====== 1.15. form section ====== -->
+        <section id="contactForm" class="contact-us-form">
+            <div class="container">
+                <div>
+                </div>
+                <div class="contact-form" data-aos="zoom-in">
+                    <div id="gooey2">
+
+                    </div>
+                    <h1><span class="gradient-text-3">Contact us</span></h1>
+                    <p>Please don't hesitate to contact us via this form if you want to participate in our <i>Family Support Programme</i>, have anything you would like to share, or want to get in touch for collaboration. We will reply as soon as possible and are looking forward to hearing from you.</p>
+                    <form id="contactFormElement" action="https://formspree.io/f/xqazower" method="post">
+                        <label for="name">NAME</label>
+                        <input type="text" id="name" name="name" placeholder="e.g. Suzanne" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="e.g. suzanne@gmail.com" required>
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Let us know your concerns" required></textarea>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="dataConsent" name="agree to email"> I am happy to be emailed by the researchers.
+                        </label>
+                        <button type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-top-wrapper">
+                    <a href="#" class="footer-logo-link">
+                        <div class="footer-logo">
+                            <img src="./images/small size logo blue ear-PhotoRoom 2.webp" alt="">
+                        </div>
+                    </a>
+                    <div class="footer-link-list">
+                        <a href="#home" class="footer_link">Home</a>
+                        <a href="#researchProject" class="footer_link">Research</a>
+                        <a href="#lenaSection" class="footer_link">Resources</a>
+                        <a href="#participateSection" class="footer_link">Participate</a>
+                        <a href="#articles" class="footer_link">Publications</a>
+                        <a href="#collaborationSection" class="footer_link">Collaboration</a>
+
+                    </div>
+                </div>
+                <div class="line-divider"></div>
+                <div class="footer-bottom-wrapper">
+                    <div class="footer-credit-text">©<span class="text-year">2024</span> Whānau Talk</div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <!-- end site wrapper -->
+
+    <script>
+
+    </script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1000,
+        });
+    </script>
+
+    <!-- jquery js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery min js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
